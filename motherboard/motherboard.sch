@@ -1,0 +1,428 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line
+	8900 5700 8900 3800
+Wire Notes Line
+	8900 3800 7750 3800
+Wire Notes Line
+	7750 3800 7750 5700
+Wire Notes Line
+	7750 5700 8900 5700
+Text Notes 8200 4750 0    50   ~ 0
+ESP32
+Text GLabel 1800 950  1    50   Input ~ 0
+DATA1
+Text GLabel 4550 950  1    50   Input ~ 0
+DATA2
+Wire Wire Line
+	1800 1200 1800 950 
+Wire Wire Line
+	4550 1200 4550 950 
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 60C81318
+P 2200 3800
+F 0 "#PWR0101" H 2200 3550 50  0001 C CNN
+F 1 "GNDREF" H 2205 3627 50  0000 C CNN
+F 2 "" H 2200 3800 50  0001 C CNN
+F 3 "" H 2200 3800 50  0001 C CNN
+	1    2200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3600 2200 3700
+Wire Wire Line
+	2300 3600 2300 3700
+Wire Wire Line
+	2300 3700 2200 3700
+Connection ~ 2200 3700
+Wire Wire Line
+	2200 3700 2200 3800
+$Comp
+L power:+5V #PWR0102
+U 1 1 60C8274B
+P 1200 3800
+F 0 "#PWR0102" H 1200 3650 50  0001 C CNN
+F 1 "+5V" H 1215 3973 50  0000 C CNN
+F 2 "" H 1200 3800 50  0001 C CNN
+F 3 "" H 1200 3800 50  0001 C CNN
+	1    1200 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 3600 1200 3800
+NoConn ~ 1300 3600
+NoConn ~ 1400 3600
+NoConn ~ 1500 3600
+NoConn ~ 1900 3600
+NoConn ~ 2000 3600
+NoConn ~ 2100 3600
+NoConn ~ 2000 1200
+NoConn ~ 1900 1200
+NoConn ~ 1700 1200
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 60C8AABD
+P 1200 1000
+F 0 "#PWR0103" H 1200 750 50  0001 C CNN
+F 1 "GNDREF" H 1205 827 50  0000 C CNN
+F 2 "" H 1200 1000 50  0001 C CNN
+F 3 "" H 1200 1000 50  0001 C CNN
+	1    1200 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 1000 1200 1200
+Text GLabel 1600 3800 3    50   Output ~ 0
+SYNC1
+Text GLabel 4350 3800 3    50   Output ~ 0
+SYNC2
+Wire Wire Line
+	4350 3800 4350 3600
+Wire Wire Line
+	1600 3800 1600 3600
+$Comp
+L power:GNDREF #PWR0104
+U 1 1 60C8F12E
+P 4950 3800
+F 0 "#PWR0104" H 4950 3550 50  0001 C CNN
+F 1 "GNDREF" H 4955 3627 50  0000 C CNN
+F 2 "" H 4950 3800 50  0001 C CNN
+F 3 "" H 4950 3800 50  0001 C CNN
+	1    4950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3600 4950 3700
+Wire Wire Line
+	5050 3600 5050 3700
+Wire Wire Line
+	5050 3700 4950 3700
+Connection ~ 4950 3700
+Wire Wire Line
+	4950 3700 4950 3800
+NoConn ~ 4850 3600
+NoConn ~ 4750 3600
+NoConn ~ 4650 3600
+NoConn ~ 4250 3600
+NoConn ~ 4150 3600
+NoConn ~ 4050 3600
+NoConn ~ 4750 1200
+NoConn ~ 4650 1200
+NoConn ~ 4450 1200
+$Comp
+L power:GNDREF #PWR0105
+U 1 1 60C929B9
+P 3950 1000
+F 0 "#PWR0105" H 3950 750 50  0001 C CNN
+F 1 "GNDREF" H 3955 827 50  0000 C CNN
+F 2 "" H 3950 1000 50  0001 C CNN
+F 3 "" H 3950 1000 50  0001 C CNN
+	1    3950 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 1000 3950 1200
+$Comp
+L power:+5V #PWR0106
+U 1 1 60C94401
+P 3950 3800
+F 0 "#PWR0106" H 3950 3650 50  0001 C CNN
+F 1 "+5V" H 3965 3973 50  0000 C CNN
+F 2 "" H 3950 3800 50  0001 C CNN
+F 3 "" H 3950 3800 50  0001 C CNN
+	1    3950 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 3600 3950 3800
+$Comp
+L Connector:Conn_01x18_Female J1
+U 1 1 60CA9FFF
+P 7800 4700
+F 0 "J1" H 7828 4630 50  0000 L CNN
+F 1 "Conn_01x18_Female" H 7828 4585 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical" H 7800 4700 50  0001 C CNN
+F 3 "~" H 7800 4700 50  0001 C CNN
+	1    7800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x18_Female J2
+U 1 1 60CAECAF
+P 8850 4800
+F 0 "J2" H 8742 3767 50  0000 C CNN
+F 1 "Conn_01x18_Female" H 8878 4685 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical" H 8850 4800 50  0001 C CNN
+F 3 "~" H 8850 4800 50  0001 C CNN
+	1    8850 4800
+	-1   0    0    1   
+$EndComp
+Text Notes 7650 3750 0    50   ~ 0
+EN
+Text Notes 7600 5750 0    50   ~ 0
+VIN
+Text Notes 8950 5750 0    50   ~ 0
+3V3
+Text Notes 8900 3750 0    50   ~ 0
+GPIO23
+$Comp
+L power:+5V #PWR0107
+U 1 1 60CB74B2
+P 7300 5700
+F 0 "#PWR0107" H 7300 5550 50  0001 C CNN
+F 1 "+5V" V 7315 5828 50  0000 L CNN
+F 2 "" H 7300 5700 50  0001 C CNN
+F 3 "" H 7300 5700 50  0001 C CNN
+	1    7300 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDREF #PWR0108
+U 1 1 60CB8493
+P 7000 5700
+F 0 "#PWR0108" H 7000 5450 50  0001 C CNN
+F 1 "GNDREF" H 7005 5527 50  0000 C CNN
+F 2 "" H 7000 5700 50  0001 C CNN
+F 3 "" H 7000 5700 50  0001 C CNN
+	1    7000 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5600 7300 5700
+Wire Wire Line
+	7300 5600 7600 5600
+Wire Wire Line
+	7600 5500 7000 5500
+Wire Wire Line
+	7000 5500 7000 5700
+Text GLabel 6600 4750 0    50   Input ~ 0
+SYNC2
+Text GLabel 6600 4900 0    50   Input ~ 0
+SYNC1
+Text GLabel 6600 4400 0    50   Output ~ 0
+DATA1
+Text GLabel 6600 4550 0    50   Output ~ 0
+DATA2
+Wire Wire Line
+	6950 4500 6950 4400
+Wire Wire Line
+	6950 4400 6600 4400
+Wire Wire Line
+	6950 4500 7600 4500
+Wire Wire Line
+	6850 4600 6850 4550
+Wire Wire Line
+	6850 4550 6600 4550
+Wire Wire Line
+	6850 4600 7600 4600
+Wire Wire Line
+	6850 4700 6850 4750
+Wire Wire Line
+	6850 4750 6600 4750
+Wire Wire Line
+	6850 4700 7600 4700
+Wire Wire Line
+	6950 4800 6950 4900
+Wire Wire Line
+	6950 4900 6600 4900
+Wire Wire Line
+	6950 4800 7600 4800
+Text GLabel 4950 4650 2    50   Output ~ 0
+SCLK
+Text GLabel 4950 4500 2    50   Output ~ 0
+DIN
+Wire Wire Line
+	4550 4650 4950 4650
+Wire Wire Line
+	4450 4500 4950 4500
+Wire Wire Line
+	4450 4500 1700 4500
+Wire Wire Line
+	1700 4500 1700 3600
+Connection ~ 4450 4500
+Wire Wire Line
+	1800 3600 1800 4650
+Wire Wire Line
+	1800 4650 4550 4650
+Connection ~ 4550 4650
+Text GLabel 9550 5700 3    50   Input ~ 0
+DIN
+Text GLabel 9400 5700 3    50   Input ~ 0
+SCLK
+Wire Wire Line
+	9050 5500 9400 5500
+Wire Wire Line
+	9400 5500 9400 5700
+Wire Wire Line
+	9050 5400 9550 5400
+Wire Wire Line
+	9550 5400 9550 5700
+Wire Wire Line
+	4550 3600 4550 4650
+Wire Wire Line
+	4450 3600 4450 4500
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 60D8E211
+P 5000 6650
+F 0 "J4" H 5028 6626 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 5028 6535 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5000 6650 50  0001 C CNN
+F 3 "~" H 5000 6650 50  0001 C CNN
+	1    5000 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 60D8EC1C
+P 5600 7000
+F 0 "J3" V 5492 6812 50  0000 R CNN
+F 1 "Conn_01x02_Female" H 5628 6885 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 7000 50  0001 C CNN
+F 3 "~" H 5600 7000 50  0001 C CNN
+	1    5600 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0109
+U 1 1 60D91B77
+P 4850 7150
+F 0 "#PWR0109" H 4850 6900 50  0001 C CNN
+F 1 "GNDREF" H 4855 6977 50  0000 C CNN
+F 2 "" H 4850 7150 50  0001 C CNN
+F 3 "" H 4850 7150 50  0001 C CNN
+	1    4850 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 60D921D9
+P 5250 7150
+F 0 "#PWR0110" H 5250 7000 50  0001 C CNN
+F 1 "+5V" H 5265 7323 50  0000 C CNN
+F 2 "" H 5250 7150 50  0001 C CNN
+F 3 "" H 5250 7150 50  0001 C CNN
+	1    5250 7150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 6850 5000 7050
+Wire Wire Line
+	4850 7050 4850 7150
+Wire Wire Line
+	4850 7050 5000 7050
+Wire Wire Line
+	5100 6850 5400 6850
+Wire Wire Line
+	5400 6850 5400 7000
+Wire Wire Line
+	5400 7100 5250 7100
+Wire Wire Line
+	5250 7100 5250 7150
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60DEC256
+P 9800 3900
+F 0 "SW1" H 9800 4185 50  0000 C CNN
+F 1 "SW_Push" H 9800 4094 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVPBF" H 9800 4100 50  0001 C CNN
+F 3 "~" H 9800 4100 50  0001 C CNN
+	1    9800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5600 9250 5600
+Wire Wire Line
+	9250 5600 9250 6000
+Wire Wire Line
+	9250 6000 10100 6000
+Wire Wire Line
+	10100 6000 10100 3900
+Wire Wire Line
+	10100 3900 10000 3900
+Wire Wire Line
+	9050 3900 9500 3900
+$Comp
+L power:GNDREF #PWR0111
+U 1 1 60DF2787
+P 9300 3450
+F 0 "#PWR0111" H 9300 3200 50  0001 C CNN
+F 1 "GNDREF" V 9305 3322 50  0000 R CNN
+F 2 "" H 9300 3450 50  0001 C CNN
+F 3 "" H 9300 3450 50  0001 C CNN
+	1    9300 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60DF3217
+P 9500 3650
+F 0 "R1" H 9430 3604 50  0000 R CNN
+F 1 "R" H 9430 3695 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 9430 3650 50  0001 C CNN
+F 3 "~" H 9500 3650 50  0001 C CNN
+	1    9500 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 3900 9500 3800
+Connection ~ 9500 3900
+Wire Wire Line
+	9500 3900 9600 3900
+Wire Wire Line
+	9500 3500 9500 3450
+Wire Wire Line
+	9500 3450 9300 3450
+$Comp
+L ADG731BCPZ:ADG731BCPZ IC1
+U 1 1 60C7F64E
+P 900 1800
+F 0 "IC1" H 2744 1246 50  0000 L CNN
+F 1 "ADG731BCPZ" H 2744 1155 50  0000 L CNN
+F 2 "ADG731BCPZ:QFN50P700X700X100-49N-D" H 2550 2200 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/0714/0900766b80714b0b.pdf" H 2550 2100 50  0001 L CNN
+F 4 "ADG731BCPZ, Analogue Switch Single 32:1, 3 V, 5 V, 48-Pin, LFCSP EP, 1" H 2550 2000 50  0001 L CNN "Description"
+F 5 "1" H 2550 1900 50  0001 L CNN "Height"
+F 6 "Analog Devices" H 2550 1800 50  0001 L CNN "Manufacturer_Name"
+F 7 "ADG731BCPZ" H 2550 1700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "584-ADG731BCPZ" H 2550 1600 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADG731BCPZ/?qs=BpaRKvA4VqF%252B2JVJWnDnJA%3D%3D" H 2550 1500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "ADG731BCPZ" H 2550 1400 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/adg731bcpz/analog-devices" H 2550 1300 50  0001 L CNN "Arrow Price/Stock"
+	1    900  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADG731BCPZ:ADG731BCPZ IC2
+U 1 1 60C81800
+P 3650 1800
+F 0 "IC2" H 5494 1246 50  0000 L CNN
+F 1 "ADG731BCPZ" H 5494 1155 50  0000 L CNN
+F 2 "ADG731BCPZ:QFN50P700X700X100-49N-D" H 5300 2200 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/0714/0900766b80714b0b.pdf" H 5300 2100 50  0001 L CNN
+F 4 "ADG731BCPZ, Analogue Switch Single 32:1, 3 V, 5 V, 48-Pin, LFCSP EP, 1" H 5300 2000 50  0001 L CNN "Description"
+F 5 "1" H 5300 1900 50  0001 L CNN "Height"
+F 6 "Analog Devices" H 5300 1800 50  0001 L CNN "Manufacturer_Name"
+F 7 "ADG731BCPZ" H 5300 1700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "584-ADG731BCPZ" H 5300 1600 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADG731BCPZ/?qs=BpaRKvA4VqF%252B2JVJWnDnJA%3D%3D" H 5300 1500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "ADG731BCPZ" H 5300 1400 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/adg731bcpz/analog-devices" H 5300 1300 50  0001 L CNN "Arrow Price/Stock"
+	1    3650 1800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
