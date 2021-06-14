@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ADG731BCPZ)(type Legacy)(uri ${KIPRJMOD}/../kicad_librairies/ADG731BCPZ/ADG731BCPZ.mod)(options "")(descr ""))
+)
