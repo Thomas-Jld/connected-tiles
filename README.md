@@ -1,10 +1,12 @@
-# connected-tiles
+# Connected tiles
 
 ## Description
 
 A set of square tiles that can be assembled to form a connected grid. The tiles can be used to create a board game to play tic-tac-toe, checkers, chess, or any other game that can be played on a square grid. A motherboard gathers information from the tiles and sends it to a computer via USB.
 
 ## Tiles
+
+![cover](docs/images/main.jpeg)
 
 ### Requirements
 
@@ -71,11 +73,7 @@ A tile must be able to:
 
 ### Tile detection mechanism
 
-When the tiles are powered up, their "connection" pins are set as Outputs and are set to HIGH. The receiving tile registers the newly connected board, and listens for a new
-
-### PCB design
-
-Add a power plane and move the Ground plane to the vv
+When the tiles are powered up, their "connection" pins are set as Outputs and are set to HIGH...
 
 ### Pieces
 
