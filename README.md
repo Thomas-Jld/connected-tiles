@@ -11,19 +11,25 @@ A set of square tiles that can be assembled to form a connected grid. The tiles 
 ### Requirements
 
 A tile must be able to:
-- Connect to other tiles using a magnetic connection, know which tiles are connected to them, and where the connected tile is located (**4 pins, 1 per direction**).
+- Connect to other tiles using a magnetic connection
+- Know which tiles are connected to them and where the connected tile is located (**4 pins, 1 per direction**).
 - Communicate with the motherboard via I2C (**8 pins, 2 per direction**).
 - Receive power from the motherboard and power the connected tiles (**8 pins, 2 per direction**).
-- Display an animation or a status color using neopixels.
+- Display an animation or a status color using Neopixels.
 - Detect which piece is on top of it using a hall effect sensor.
 
 ### Piece detection
 
 Sensing what piece was placed on top of the tile can be done in multiple ways:
+
+**Currently used**
+
 - 1D Hall effect sensor
 - Color sensor
-- RFID
 - Capacitive sensor
+
+**Potential implementations**
+- RFID
 - 3D Hall effect sensor
 - LC Resonance
 - Weight sensor
@@ -31,9 +37,10 @@ Sensing what piece was placed on top of the tile can be done in multiple ways:
 ### Components
 
 **MCU**
-- ATMEGA328P-AN [(1)](https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AN/2357082) [(2)](https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf)
+- ATMEGA328PB-MU-ND [(1)](https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328PB-MU/5638814) [(2)](https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf)
 
 Others:
+- ATMEGA328P-AN [(1)](https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AN/2357082)
 - ATMEGA328-AU [(1)](https://www.digikey.com/en/products/detail/ATMEGA328-AU/ATMEGA328-AU-ND/2271029)
 
 **Crystal**
@@ -81,16 +88,26 @@ Others:
 - TS04-66-43-BK-100-SMT [(1)](https://www.digikey.com/en/products/detail/cui-devices/TS04-66-43-BK-100-SMT/15634299)
 
 **Capacitors**
-- *For the crystal:* 12pf 0603 0603N120J500CT [1](https://www.digikey.com/en/products/detail/walsin-technology-corporation/0603N120J500CT/9354977)
-- *For the hall effect sensor:* 12pf 0603 0603N120J500CT [1](https://www.digikey.com/en/products/detail/walsin-technology-corporation/0603N120J500CT/9354977)
+- *Crystal:* 12pf 0603 0603N120J500CT [(1)](https://www.digikey.com/en/products/detail/walsin-technology-corporation/0603N120J500CT/9354977)
+- *Hall effect sensor:* 12pf 0603 0603N120J500CT [(1)](https://www.digikey.com/en/products/detail/walsin-technology-corporation/0603N120J500CT/9354977)
+- *Capacitive Touch:* 22nf 0402 C0402C223K5REC7411 [[1]](https://www.digikey.com/en/products/detail/kemet/C0402C223K5REC7411/8645043)
 
 **LED**
-- B1931UD--05D000314U1930 [(1)](https://www.digikey.com/en/products/detail/harvatek-corporation/B1931UD-05D000314U1930/15861266)
+- *Serial com* B1931UD--05D000314U1930 [(1)](https://www.digikey.com/en/products/detail/harvatek-corporation/B1931UD-05D000314U1930/15861266)
+- *Color sensor (CS)* T2133BGR-20C0001U2U1930 [(1)](https://www.digikey.com/en/products/detail/harvatek-corporation/T2133BGR-20C0001U2U1930/17830297)
+
+**Phototransistor**
+- *Color sensor* B19H1PT--H9C000214U1930 [(1)](https://www.digikey.com/en/products/detail/harvatek-corporation/B19H1PT-H9C000214U1930/13574171)
+
 
 **Resistors**
-- *For the Neopixels:* 300 Ohm 0603 RC0603JR-07300RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-07300RL/726765)
-- *For the led:* 300 Ohm 0603 RC0603JR-07300RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-07300RL/726765)
-- *For the Pull-up reset resistor:* 10k Ohm 0603 RNCP0603FTD10K0 [(1)](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0603FTD10K0/2240139)
+- *Neopixels:* 300 Ohm 0603 RC0603JR-07300RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-07300RL/726765)
+- *Serial com led:* 300 Ohm 0603 RC0603JR-07300RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-07300RL/726765)
+- *MCU Pull-up reset resistor:* 10k Ohm 0603 RC0603JR-071KL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-0710KL/726700)
+- *R channel of the CS RGB led:* 150 Ohm 0603 RC0603JR-07150RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-07150RL/726714)
+- *G channel of the CS RGB led:* 90 Ohm 0603 RC0603JR-0791RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-0791RL/726840)
+- *B channel of the CS RGB led:* 90 Ohm 0603 RC0603JR-0791RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-0791RL/726840)
+- *Capacitive touch:* 1k Ohm 0603 RC0603JR-071KL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-071KL/726677)
 
 
 ### Tile detection mechanism
@@ -114,5 +131,5 @@ A piece category is defined by the magnetic field it generates. For example, in 
 The motherboard should be able to:
 - Power up to 64 tiles, each tile consuming up to 250mA (16A total).
 - Communicate with each tile using I2C:
-  The added capacitance of each tile could be a problem (regular I2C is limited to 400pF), which means that the bus will either need to be slowed down or an extender will be placed on the motherboard (the [LTC4311](https://www.adafruit.com/product/4756) allows the bus to have a capacitance up to 4000pF)
+  The added capacitance of each tile could be a problem (regular I2C is limited to 400pF), which means that the bus will either need to be slowed down or an extender will be placed on the motherboard (the [LTC4311](https://www.adafruit.com/product/4756) allows the bus coupling capacitance to be up to 4000pF)
 - Communicate with the computer using USB or operate autonomously.
