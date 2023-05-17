@@ -2917,7 +2917,7 @@
     (property "Value" "SW_DIP_x01" (at 168.91 95.25 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645" (at 168.91 99.06 0)
+    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A" (at 168.91 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 168.91 99.06 0)
