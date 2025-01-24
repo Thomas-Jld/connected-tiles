@@ -44,7 +44,7 @@ Others:
 - ATMEGA328-AU [(1)](https://www.digikey.com/en/products/detail/ATMEGA328-AU/ATMEGA328-AU-ND/2271029)
 
 **Crystal**
-- 16MHz RH100-16-000-9-1018-EXT-TR [(1)](https://www.digikey.com/en/products/detail/raltron-electronics/RH100-16-000-9-1018-EXT-TR/13150831)
+- 16MHz 2151-RH100-16.000-9-1018-EXT-TRCT-ND [(1)](https://www.digikey.com/en/products/detail/raltron-electronics/RH100-16-000-9-1018-EXT-TR/13150831)
 
 Others:
 
@@ -90,7 +90,7 @@ Others:
 - 5mm x 1mm neodymium magnets [(1)](https://www.magnetiques.fr/magnetique,aimant-rond-plat-552-fr.html)
 
 **Reset tactile switch**
-- PTS526 SM15 SMTR2 LFS [(1)](https://www.digikey.com/en/products/detail/c-k/PTS526-SM15-SMTR2-LFS/10056625)
+- PTS526 SM15 SMTR2 LFS CKN12220-1-ND [(1)](https://www.digikey.com/en/products/detail/c-k/PTS526-SM15-SMTR2-LFS/10056625)
 
 Others:
 
@@ -103,7 +103,7 @@ Others:
 - *AREF decoupler:* 100nf 0603 CL10B104KB8NNWC [(1)](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNWC/3887593)
 
 **LED**
-- *Serial com* B1931UD--05D000314U1930 [(1)](https://www.digikey.com/en/products/detail/harvatek-corporation/B1931UD-05D000314U1930/15861266)
+- *Serial com* B1931UD-05D000314U1930 [(1)](https://www.digikey.com/en/products/detail/harvatek-corporation/B1931UD-05D000314U1930/15861266)
 - *Color sensor (CS)* T2133BGR-20C0001U2U1930 [(1)](https://www.digikey.com/en/products/detail/harvatek-corporation/T2133BGR-20C0001U2U1930/17830297)
 
 **Phototransistor**
@@ -113,8 +113,8 @@ Others:
 **Resistors**
 - *Neopixels:* 300 Ohm 0603 RC0603JR-07300RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-07300RL/726765)
 - *Serial com led:* 300 Ohm 0603 RC0603JR-07300RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-07300RL/726765)
-- *MCU Pull-up reset resistor:* 10k Ohm 0603 RC0603JR-071KL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-0710KL/726700)
-- *Color sensor:* 10k Ohm 0603 RC0603JR-071KL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-0710KL/726700)
+- *MCU Pull-up reset resistor:* 10k Ohm 0603 RC0603JR-0710KL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-0710KL/726700)
+- *Color sensor:* 10k Ohm 0603 RC0603JR-0710KL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-0710KL/726700)
 - *R channel of the CS RGB led:* 150 Ohm 0603 RC0603JR-07150RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-07150RL/726714)
 - *G channel of the CS RGB led:* 90 Ohm 0603 RC0603JR-0791RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-0791RL/726840)
 - *B channel of the CS RGB led:* 90 Ohm 0603 RC0603JR-0791RL [(1)](https://www.digikey.com/en/products/detail/yageo/RC0603JR-0791RL/726840)

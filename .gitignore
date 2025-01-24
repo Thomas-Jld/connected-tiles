@@ -30,3 +30,5 @@ fp-info-cache
 
 # Zips
 *.zip
+
+gerbers/
